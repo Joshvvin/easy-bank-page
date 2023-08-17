@@ -5,8 +5,14 @@ body{
     font-family: 'Public Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
     /* width: 98vw; */
     /* border: 1px solid black; */
+}
+.body-container{
+    width: 80%;
+    /* border:1px solid black; */
 }
 .btn{
     flex-basis: 95%;
@@ -31,14 +37,20 @@ a:hover{
     border-bottom : 4px solid hsl(136, 65%, 51%);
     /* box-sizing: border-box; */
 }
+.footer-social:hover{
+    border: 0px solid white;
+    filter: brightness(0.3);
+    /* background-color: hsl(136, 65%, 51%); */
+    /* background-color: white; */
+}
 header{
     margin-top: 1em;
     height: 4em;
-    width: 82%;
+    width: 100%;
     display: flex;
     /* flex-basis: 30%; */
     justify-content: space-between;
-    margin-left: 9.4em;
+    /* margin-left: 9.4em; */
     /* border: 1px solid black; */
     .header-img{
         display: flex;
@@ -84,7 +96,7 @@ header{
 }
 content{
     .container{
-        margin-left: 150px;
+        /* margin-left: 150px; */
         height: 200vh;
         /* border: 1px solid black; */
         display: flex;
@@ -93,20 +105,22 @@ content{
         row-gap: 40px;
         .first{
             flex-basis: 55%;
+            /* border: 1px solid black; */
             .first-container{
                 display: flex;
-                flex-basis: 100%;
-                height: 100%;
+                width: 88.5vw;
+                height: 90%;
+                background-color: hsl(220, 16%, 96%);
                 /* border: 1px solid black; */
                 .first-container1{
-                    flex-basis: 60%;
+                    flex-basis: 30%;
                     /* border: 1px solid black; */
                     height: 100%;
                     display: flex;
                     justify-content: start;
                     align-items: center;
                     .first-container1-1{
-                        flex-basis: 72%;
+                        flex-basis: 92%;
                         height: 70%;
                         display: flex;
                         flex-direction: column;
@@ -124,7 +138,7 @@ content{
                         .first-center{
                             flex-basis: 25%;
                             /* font-size: 22px; */
-                            width: 80%;
+                            width: 100%;
                             color: hsl(233, 8%, 62%);
                             /* border: 1px solid black; */
                         }
@@ -134,22 +148,34 @@ content{
                             /* border: 1px solid black; */
                             display: flex;
                             #btn1{
-                                flex-basis: 25%;
-                                height: 55%;
+                                flex-basis: 33%;
+                                height: 65%;
                             }
                         }
                     }
                 }
                 .first-container2{
-                    flex-basis: 65%;
+                    flex-basis: 70%;
                     background-image: url('./images/bg-intro-desktop.svg');
                     background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: cover;
-                    /* img{
-                        overflow: visible;
-                        size: 100px 100px;
-                    } */
+                    background-position: -35% 60%;
+                    background-size: 150% 170%;
+                    align-items: end;
+                    position:relative;
+                    .mockups{
+                        border: 1px solid black;
+                        width: 100%;
+                        height: 136%;
+                        position: absolute;
+                        right: 0;
+                        overflow: hidden;
+                        .first-img{
+                            height: 110%;
+                            width: 70%;
+                            margin-top: -135px;
+                            margin-left: 470px;
+                        }
+                    }
                 }
             }
         }
@@ -179,7 +205,7 @@ content{
             flex-direction: row;
             .third-container{
                 display: flex;
-                flex-basis: 90%;
+                flex-basis: 100%;
                 height: 100%;
                 /* border: 1px solid black; */
                 justify-content: space-between;
@@ -297,7 +323,7 @@ content{
             } */
             display: flex;
             .fourth-container{
-                flex-basis: 90%;
+                flex-basis: 100%;
                 display: flex;
                 flex-direction: column;
                 row-gap: 50px;
@@ -471,16 +497,18 @@ content{
 
 footer{
     height: 170px;
+    margin-left: -190px;
     background-color: hsl(233, 26%, 24%);
     color: white;
     display: flex;
-    width: 100%;
+    width: 99.1vw;
+    justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 50px; 
     .footer-container{
-        margin-left: 150px;
-        flex-basis: 82.5%;
+        /* margin-left: 150px; */
+        flex-basis: 80%;
         height: 50%;
         /* border: 1px solid black; */
         display: flex;
@@ -541,28 +569,47 @@ footer{
                     flex-basis: 30%;
                     width: 55%;
                     /* border: 1px solid black; */
-                    display: flex;
-                    .footer-socials-fb, .footer-socials-yt, .footer-socials-twt, .footer-socials-pint, .footer-socials-insta{
+                    display: flex;                    
+                    #fb, #yt, #twt, #pint, #insta{
                         flex-basis: 20%;
-                        height: 60%;
+                        height: 100%;
                         /* border: 1px solid black; */
+                    }
+                    #fb{
+                        width: 100%;
+                        height: 70%;
+                        background-image: url('./images/icon-facebook.svg');
+                        background-size:  contain;
+                        background-repeat: no-repeat;                    
+                    }
+                   
+                    #yt{
+                        width: 100%;
+                        height: 70%;
+                        background-image: url('./images/icon-youtube.svg');
                         background-size:  contain;
                         background-repeat: no-repeat;
                     }
-                    .footer-socials-fb{
-                        background-image: url('./images/icon-facebook.svg');
-                    }
-                    .footer-socials-yt{
-                        background-image: url('./images/icon-youtube.svg');
-                    }
-                    .footer-socials-twt{
+                    #twt{
+                        width: 100%;
+                        height: 70%;
                         background-image: url('./images/icon-twitter.svg');
+                        background-size:  contain;
+                        background-repeat: no-repeat;
                     }
-                    .footer-socials-pint{
+                    #pint{
+                        width: 100%;
+                        height: 70%;
                         background-image: url('./images/icon-pinterest.svg');
+                        background-size:  contain;
+                        background-repeat: no-repeat;
                     }
-                    .footer-socials-insta{
+                    #insta{
+                        width: 100%;
+                        height: 70%;
                         background-image: url('./images/icon-instagram.svg');
+                        background-size:  contain;
+                        background-repeat: no-repeat;
                     }
                 } 
             }
@@ -627,3 +674,6 @@ footer{
     }
     /* border: 1px solid black; */
 }
+/* @media(max-width:375px){
+
+} */
