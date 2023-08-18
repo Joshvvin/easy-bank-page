@@ -92,6 +92,13 @@ header{
         flex-basis: 10%;
         align-items: center;
         text-align: center;
+        /* border: 1px solid black; */
+        .btn{
+            flex-grow: 1;
+        }
+        .icon{
+            display: none;
+        }
     }
 }
 content{
@@ -676,6 +683,9 @@ footer{
     /* border: 1px solid black; */
 }
 @media(max-width:375px){
+    .hamburger:active{
+        /* background-color: black; */
+    }
     body{
         /* border: 1px solid black; */
         height: 440vh;
@@ -689,13 +699,52 @@ footer{
         width: 100%;
         height: 7vh;
         /* border: 1px solid black; */
-        .header-center, .header-end{
+        display: flex;
+        flex-wrap: wrap;
+        /* row-gap: 100%; */
+        .header-center{
+            order: 3;
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid black; */
+            flex-basis: 100%;
+            height: 400%;
+            background-color: white;
+            /* padding-top: 10%; */
+            margin-top: 10%;
+            margin-left: 3%;
+            color: black;
+            justify-content: space-evenly;
+            border-radius: 2%;
+            align-items: center;
+            z-index: 1;
+            box-shadow: 0 60px 150px 100px hsl(233, 26%, 24%);
+            .home, .about, .contact, .blog, .careers{
+                /* border: 1px solid black; */
+                /* text-align: center; */
+                color: hsl(233, 26%, 24%);
+                height: 1.5em;
+                /* text-decoration-color: hsl(233, 8%, 62%); */
+            }
             display: none;
         }
         .header-img{
-            flex-basis: 60%;
+            flex-basis: 70%;
+            height: 80%;
+            order: 1;
+            /* border: 1px solid black; */
+        }
+        .header-end{
+            order: 2;
+            flex-basis: 20%;
             height: 80%;
             /* border: 1px solid black; */
+            .btn{
+                display: none;
+            }        
+            .icon{
+                display: flex;
+            }
         }
     }
     content{
@@ -767,8 +816,8 @@ footer{
                         /* border: 1px solid black; */
                         width: 99vw;
                         margin-left: 1%;
-                        background-size: 140% 200%;
-                        background-position: 30% 95%;
+                        background-size: 150% 200%;
+                        background-position: 35% 70%;
                         .mockups{
                             width: 100%;
                             height: 100%;
@@ -778,7 +827,7 @@ footer{
                                 height: 155%;
                                 width: 95%;
                                 margin-left: 1.5%;
-                                margin-top: -34%;
+                                margin-top: -36%;
                                 /* margin-bottom: 50%; */
                             }
                         }
@@ -1170,7 +1219,7 @@ footer{
                                 height: 100%;
                                 /* margin-left: -10%; */
                                 /* padding-right: -100%; */
-                                transform: translate(16%, 0);
+                                transform: translate(15%, 0);
                                 background-size: cover;
                                 /* border: 1px solid white;     */
                             }
