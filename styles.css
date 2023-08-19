@@ -57,21 +57,12 @@ header{
         .header-img{
             display: flex;
             flex-direction: row;
-            /* height: 80%; */
             /* border: 1px solid black; */
-            justify-content: start;
-            align-items: end;
-            flex-basis: 30%;
-            .div-img{
-                flex-basis: 10%;
-                height: 30%;
-                /* border: 1px solid black; */
-                background-image: url('./images/logo.svg');
-                background-repeat: no-repeat;
-                /* border: 1px solid black; */
-                flex-basis: 100%;
-                height: 70%;
-                /* align-items: center; */
+            align-items: center;
+            flex-basis: 10%;
+            img{
+                height: 100%;
+                width: 100%;
             }
         }
         .header-center{
@@ -256,17 +247,21 @@ content{
                     row-gap: 40px;
                     /* border: 1px solid black; */
                     .third-first-img{
-                        background-image: url('./images/icon-online.svg');
                         flex-basis: 20%;
-                        width: 40%;
-                        background-repeat: no-repeat;
-                        background-size: contain;
+                        width: 100%;
+                        /* border: 1px solid black; */
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
                     }
                     .third-first-header{
                         font-size: 25px;
                         color: hsl(233, 26%, 24%);
+                        /* border: 1px solid black; */
                     }
                     .third-first-content{
+                        /* border: 1px solid black; */
                         /* border: 1px solid black; */
                         /* font-size: 22px; */
                     }
@@ -280,11 +275,13 @@ content{
                     row-gap: 40px;
                     /* border: 1px solid black; */
                     .third-second-img{
-                        background-image: url('./images/icon-budgeting.svg');
                         flex-basis: 20%;
-                        width: 40%;
-                        background-repeat: no-repeat;
-                        background-size: contain;
+                        width: 100%;
+                        /* border: 1px solid black; */
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
                     }
                     .third-second-header{
                         font-size: 25px;
@@ -306,11 +303,13 @@ content{
                     row-gap: 40px;
                     /* border: 1px solid black; */
                     .third-third-img{
-                        background-image: url('./images/icon-onboarding.svg');
                         flex-basis: 20%;
-                        width: 40%;
-                        background-repeat: no-repeat;
-                        background-size: contain;
+                        width: 100%;
+                        /* border: 1px solid black; */
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
                     }
                     .third-third-header{
                         font-size: 25px;
@@ -332,11 +331,13 @@ content{
                     row-gap: 40px;
                     /* border: 1px solid black; */
                     .third-fourth-img{
-                        background-image: url('./images/icon-api.svg');
                         flex-basis: 20%;
-                        width: 40%;
-                        background-repeat: no-repeat;
-                        background-size: contain;
+                        width: 100%;
+                        /* border: 1px solid black; */
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
                     }
                     .third-fourth-header{
                         font-size: 25px;
@@ -354,7 +355,7 @@ content{
         }
         .fourth{
             flex-basis: 50%;
-            width: 100%;
+            width: 99.89%;
             margin-top: 5%;
             display: flex;
             justify-content: center;
@@ -390,17 +391,18 @@ content{
                         display: flex;
                         flex-direction: column;
                         /* justify-content: space-between; */
-                        row-gap: 30px;
+                        row-gap: 20px;
                         /* justify-content: center; */
                         .fourth-first-img{
                             /* border: 1px solid black; */
-                            background-image: url('./images/image-currency.jpg');
-                            background-repeat: no-repeat;
-                            background-size: cover;
                             border-top-left-radius: 5px;
                             border-top-right-radius: 5px;
                             flex-basis: 50%;
-                            width: 100%;
+                            .image{
+                                width: 100%;
+                                height: 95%;
+                            }
+                            /* width: 60%; */
                         }
                         .fourth-first-container{
                             margin-left: -30px;
@@ -431,13 +433,14 @@ content{
                         /* justify-content: center; */
                         .fourth-second-img{
                             /* border: 1px solid black; */
-                            background-image: url('./images/image-restaurant.jpg');
-                            background-repeat: no-repeat;
-                            background-size: cover;
                             border-top-left-radius: 5px;
                             border-top-right-radius: 5px;
                             flex-basis: 50%;
-                            width: 100%;
+                            /* width: 100%; */
+                            .image{
+                                width: 100%;
+                                height: 100%;
+                            }
                         }
                         .fourth-second-container{
                             margin-left: -30px;
@@ -468,13 +471,14 @@ content{
                         /* justify-content: center; */
                         .fourth-third-img{
                             /* border: 1px solid black; */
-                            background-image: url('./images/image-plane.jpg');
-                            background-repeat: no-repeat;
-                            background-size: cover;
                             border-top-left-radius: 5px;
                             border-top-right-radius: 5px;
                             flex-basis: 50%;
-                            width: 100%;
+                            /* width: 100%; */
+                            .image{
+                                width: 100%;
+                                height: 100%;
+                            }
                         }
                         .fourth-third-container{
                             margin-left: -30px;
@@ -505,13 +509,14 @@ content{
                         /* justify-content: center; */
                         .fourth-fourth-img{
                             /* border: 1px solid black; */
-                            background-image: url('./images/image-confetti.jpg');
-                            background-repeat: no-repeat;
-                            background-size: cover;
                             border-top-left-radius: 5px;
                             border-top-right-radius: 5px;
                             flex-basis: 50%;
-                            width: 100%;
+                            /* width: 100%; */
+                            .image{
+                                width: 100%;
+                                height: 100%;
+                            }
                         }
                         .fourth-fourth-container{
                             margin-left: -30px;
@@ -793,11 +798,11 @@ footer{
         display: flex;
         justify-content: center;
         .content-container{
-            height: 370vh;
+            height: 420vh;
             width: 100%;
             /* border: 1px solid black; */
             .first {
-                flex-basis: 25%;
+                flex-basis: 18%;
                 /* border: 1px solid black; */
                 /* display: none; */
                .first-container{
@@ -840,12 +845,12 @@ footer{
                             .first-end{
                                 flex-basis: 18%;
                                 width: 100%;
-                                /* border: 1px solid black; */
+                                border: 1px solid black;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
                                 #btn1{
-                                    flex-basis: 50%;    
+                                    flex-basis: 45%;    
                                     height: 80%;
                                 }
                             }
@@ -879,7 +884,7 @@ footer{
                 }
             }
             .second{
-                flex-basis: 10%;
+                flex-basis: 8%;
                 width: 100%;
                 /* border: 1px solid black; */
                 justify-content: center;
@@ -890,7 +895,7 @@ footer{
                     width: 90%;
                     display: flex;
                     flex-direction: column;
-                    justify-content: end;
+                    justify-content: center;
                     row-gap: 5%;
                     align-items: center;
                     .second-header{
@@ -910,7 +915,7 @@ footer{
                 }
             }
             .third{
-                flex-basis: 35%;
+                flex-basis: 30%;
                 width: 100%;
                 /* border: 1px solid black; */
                 .third-container{
@@ -1049,7 +1054,7 @@ footer{
                 }
             }
             .fourth{
-                flex-basis: 50%;
+                flex-basis: 55%;
                 width: 100%;
                 /* border: 1px solid black; */
                 margin-top: 20%;
@@ -1072,21 +1077,28 @@ footer{
                         height: 100%;
                         /* border: 1px solid black; */
                         justify-content: space-between;
-                        row-gap: 0;
+                        row-gap: 3%;
                         .fourth-content-first{
                             flex-basis: 22%;
                             width: 100%;
                             /* border: 1px solid black; */
                             justify-content: space-between;
                             align-items: center;
-                            row-gap: 10%;
+                            row-gap: 3%;
                             .fourth-first-img{
                                 flex-basis: 50%;
+                                /* border: 1px solid black; */
                                 width: 100%;
+                                overflow: hidden;
+                                .image{
+                                    height: 100%;
+                                    width: 100%;
+                                    /* object-fit: contain;
+                                    object-position: center center; */
+                                }
                                 /* background-size: cover;
                                 border-top-left-radius: 5px;
                                 border-top-right-radius: 5px; */
-                                /* border: 1px solid black; */
                             }
                             .fourth-first-container{
                                 flex-basis: 40%;
@@ -1098,13 +1110,14 @@ footer{
                                     /* border: 1px solid black; */
                                 }
                                 .fourth-first-title{
-                                    font-size: 90%;
+                                    font-size: 100%;
                                     width: 100%;
-                                    flex-basis: 30%;
+                                    flex-shrink: 2;
+                                    /* flex-basis: 30%; */
                                     /* border: 1px solid black; */
                                 }
                                 .fourth-first-content{
-                                    font-size: 70%;
+                                    font-size: 80%;
                                     flex-basis: 40%;
                                     /* border: 1px solid black; */
                                 }
@@ -1120,6 +1133,11 @@ footer{
                             .fourth-second-img{
                                 flex-basis: 50%;
                                 width: 100%;
+                                overflow: hidden;
+                                .image{
+                                    height: 100%;
+                                    width: 100%;
+                                }
                                 /* background-size: cover;
                                 border-top-left-radius: 5px;
                                 border-top-right-radius: 5px; */
@@ -1135,13 +1153,14 @@ footer{
                                     /* border: 1px solid black; */
                                 }
                                 .fourth-second-title{
-                                    font-size: 90%;
+                                    font-size: 100%;
                                     width: 100%;
-                                    flex-basis: 30%;
+                                    /* flex-basis: 30%; */
+                                    flex-shrink: 1;
                                     /* border: 1px solid black; */
                                 }
                                 .fourth-second-content{
-                                    font-size: 70%;
+                                    font-size: 80%;
                                     flex-basis: 40%;
                                     /* border: 1px solid black; */
                                 }
@@ -1157,6 +1176,11 @@ footer{
                             .fourth-third-img{
                                 flex-basis: 50%;
                                 width: 100%;
+                                overflow: hidden;
+                                .image{
+                                    height: 100%;
+                                    width: 100%;
+                                }
                                 /* background-size: cover;
                                 border-top-left-radius: 5px;
                                 border-top-right-radius: 5px; */
@@ -1172,13 +1196,14 @@ footer{
                                     /* border: 1px solid black; */
                                 }
                                 .fourth-third-title{
-                                    font-size: 90%;
+                                    font-size: 100%;
                                     width: 100%;
-                                    flex-basis: 30%;
+                                    /* flex-basis: 30%; */
+                                    flex-shrink: 1;
                                     /* border: 1px solid black; */
                                 }
                                 .fourth-third-content{
-                                    font-size: 70%;
+                                    font-size: 80%;
                                     flex-basis: 40%;
                                     /* border: 1px solid black; */
                                 }
@@ -1194,6 +1219,11 @@ footer{
                             .fourth-fourth-img{
                                 flex-basis: 50%;
                                 width: 100%;
+                                overflow: hidden;
+                                .image{
+                                    height: 100%;
+                                    width: 100%;
+                                }
                                 /* background-size: cover;
                                 border-top-left-radius: 5px;
                                 border-top-right-radius: 5px; */
@@ -1209,13 +1239,14 @@ footer{
                                     /* border: 1px solid black; */
                                 }
                                 .fourth-fourth-title{
-                                    font-size: 90%;
+                                    font-size: 100%;
                                     width: 100%;
-                                    flex-basis: 30%;
+                                    /* flex-basis: 30%; */
+                                    flex-shrink: 1;
                                     /* border: 1px solid black; */
                                 }
                                 .fourth-fourth-content{
-                                    font-size: 70%;
+                                    font-size: 80%;
                                     flex-basis: 40%;
                                     /* border: 1px solid black; */
                                 }
@@ -1231,8 +1262,8 @@ footer{
         /* margin-top: 12.5vh; */
         height: 60vh;
         width: 100vw;
-        margin-left: -5vw;
-        margin-top: 15vh;
+        margin-left: -3vw;
+        margin-top: 14vh;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -1298,7 +1329,7 @@ footer{
                         width: 90%;
                         justify-content: space-between;
                         display: flex;
-                        /* border : 1px solid white; */
+                        border : 1px solid white;
                         #fb, #yt, #twt, #pint, #insta{
                             flex-basis: 15%;
                             height: 60%;
