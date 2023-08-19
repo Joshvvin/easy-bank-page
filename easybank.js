@@ -18,3 +18,5 @@ close.addEventListener('click', () => {
     btn.style.display = 'block'
     close.style.display='none';
 });
+const socials = document.getElementsByTagName('a');
+console.log(socials);
