@@ -714,7 +714,7 @@ footer{
     }
     /* border: 1px solid black; */
 }
-@media(min-width: 350px) and (max-width:500px){
+@media(min-width: 350px) and (max-width:520px){
     body{
         /* border: 1px solid black; */
         height: 450vh;
@@ -742,12 +742,12 @@ footer{
                 display: flex;
                 flex-direction: column;
                 /* border: 1px solid black; */
-                width: 100%;
+                flex-basis: 130%;
                 height: 480%;
                 background-color: white;
                 /* padding-top: 10%; */
                 margin-top: 10%;
-                margin-left: 3%;
+                margin-left: 2%;
                 color: black;
                 justify-content: space-evenly;
                 border-radius: 2%;
@@ -869,8 +869,8 @@ footer{
                             .first-img{
                                 height: 150%;
                                 width: 95%;
-                                margin-left: 1.5%;
-                                margin-top: -38%;
+                                margin-left: 10px;
+                                margin-top: -138px;
                                 /* margin-bottom: 50%; */
                             }
                         }
