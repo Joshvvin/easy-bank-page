@@ -400,9 +400,10 @@ content{
                             border-top-left-radius: 5px;
                             border-top-right-radius: 5px;
                             flex-basis: 50%;
+                            /* overflow: hidden; */
                             .image{
                                 width: 100%;
-                                height: 95%;
+                                height: 96%;
                             }
                             /* width: 60%; */
                         }
@@ -438,6 +439,7 @@ content{
                             border-top-left-radius: 5px;
                             border-top-right-radius: 5px;
                             flex-basis: 50%;
+                            /* overflow: hidden; */
                             /* width: 100%; */
                             .image{
                                 width: 100%;
@@ -476,6 +478,7 @@ content{
                             border-top-left-radius: 5px;
                             border-top-right-radius: 5px;
                             flex-basis: 50%;
+                            /* overflow: hidden; */
                             /* width: 100%; */
                             .image{
                                 width: 100%;
@@ -514,6 +517,7 @@ content{
                             border-top-left-radius: 5px;
                             border-top-right-radius: 5px;
                             flex-basis: 50%;
+                            /* overflow: hidden; */
                             /* width: 100%; */
                             .image{
                                 width: 100%;
@@ -680,7 +684,7 @@ footer{
 @media(min-width: 350px) and (max-width:520px){
     body{
         /* border: 1px solid black; */
-        height: 450vh;
+        /* height: 520vh; */
     }
     .body-container{
         width: 100%;
@@ -756,11 +760,11 @@ footer{
         display: flex;
         justify-content: center;
         .content-container{
-            height: 420vh;
+            height: 550vh;
             width: 100%;
             /* border: 1px solid black; */
             .first {
-                flex-basis: 18%;
+                flex-basis: 16%;
                 /* border: 1px solid black; */
                 /* display: none; */
                .first-container{
@@ -842,7 +846,7 @@ footer{
                 }
             }
             .second{
-                flex-basis: 8%;
+                flex-basis: 7%;
                 width: 100%;
                 /* border: 1px solid black; */
                 justify-content: center;
@@ -1012,7 +1016,7 @@ footer{
                 }
             }
             .fourth{
-                flex-basis: 55%;
+                flex-basis: 45%;
                 width: 100%;
                 /* border: 1px solid black; */
                 margin-top: 20%;
@@ -1316,10 +1320,6 @@ footer{
 
             }
         }
-    }
-}
-@media(min-width:376px){
-    .header-center{
-        display: flex;
+        /* display: none; */
     }
 }
